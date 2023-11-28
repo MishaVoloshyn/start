@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+        let $a = 12;
+        document.write("Hello world = " + $a);
+        let str = "<h1> Hello world </h1>";
+        document.write(str);
+        console.log("Hello console")
+
+        
+
+    </script> -->
+    <!-- . Вывести # столько раз, сколько указал пользователь -->
+    <!-- <script>
+       
+        let count = parseInt(prompt("Сколько символов вывести?"));
+        let symb = "#";
+        
+        while (count != 0) {
+          
+            document.write(symb);
+            count--;
+
+        }
+    </script> -->
+
+
+
+    <!-- Пользователь ввел число, а на экран вывелись все числа
+    от введенного до 0. -->
+
+    <!-- <script>
+       
+        let count = parseInt(prompt("Сколько символов вывести?",10));
+       
+        while (count != 0) {
+            
+            document.write(count-1 + ",");
+            count--;
+
+        }
+    </script> -->
+
+    <!-- 3. Запросить число и степень. Возвести число в указанную
+    степень и вывести результат. -->
+
+    <!-- <script>
+       
+        let number = parseInt(prompt("Сколько символов вывести?",2));
+        let number2 = parseInt(prompt("Сколько символов вывести?",2));
+        let counter = 1;
+        while (counter > 0) {
+           
+            document.write(number ** number2);
+            break;
+        }
+    </script> -->
+
+    <!-- 4. Запросить 2 числа и найти все общие делители. -->
+
+    <!-- <script>
+
+        let number = parseInt(prompt("Сколько символов вывести?", 9));
+        let number2 = parseInt(prompt("Сколько символов вывести?", 6));
+        let ost = 0;
+        let ost2 = 0;
+
+        let counter = 1;
+        while (counter > 0) {
+            ost = number % number2;
+            document.write(ost);
+            ost2 = number2 % ost;
+            document.write(ost2);
+
+            document.write(ost / ost2);
+            break;
+        }
+    </script> -->
+
+    <!-- 5. Посчитать факториал введенного пользователем числа. -->
+    <!-- <script>
+
+        let number = parseInt(prompt("Сколько символов вывести?", 5));
+       
+        let temp = 1;
+        while (number > 0) {
+            temp *= number;
+            number--;
+        }
+        document.write(temp);
+    </script> -->
+
+    <!-- ■ Задания, в которых необходимо использовать DO WHILE.
+    1. Предлагать пользователю решить пример 2 + 2 * 2 до тех
+    пор, пока он не решит его правильно. -->
+
+    <!-- <script>
+        let number;
+        let check = 2+2*2;
+        do {
+            number = prompt("Реши задачу, сколько будет 2+2*2: ");
+        }
+        while (number != check);
+        alert("Красава");
+    </script> -->
+
+    <!-- 2. Делить число 1000 на 2 до тех пор, пока не получится число
+    меньше 50. Вывести это число и сколько делений произвели. -->
+
+    <!-- <script>
+        let number = 1000;
+        let counter = 0;
+        let promeshutok;
+        let ostatok;
+        do {
+            number = number/2;
+            counter++;
+        }
+        while (number > 50);
+        document.write(number + "_____");
+        document.write(counter);
+        alert("Красава");
+    </script> -->
+
+    <!-- ■ Задания, в которых необходимо использовать FOR.
+    3. Вывести все числа от 1 до 100, которые кратные указанному
+    пользователем числу. -->
+
+    <!-- <script>
+        let number;
+        number = prompt("Чисто 0-100: ");
+        for (let i = 0; i < 101; i++)
+        {
+            if(i%number == 0 && i!=0){
+                document.write(i + "__");
+            }
+        }
+    </script> -->
+
+
+    <!-- 4. Вывести каждый 4-й элемент из указанного пользователем
+    диапазона. Пользователь указывает минимальное и максимальное значения диапазона. -->
+
+    <!-- <script>
+        let number = parseInt(prompt("Чисто 0-100: "));
+        let number2 = parseInt(prompt("Чисто 0-100: "));
+        for (let i = number; i <= number2; i += 4) {
+            document.write(i+"_");
+        }
+    </script> -->
+
+    <!-- 5. Запросить число и проверить, простое ли оно. Простое
+    число делится без остатка только на себя и на единицу. -->
+    <script>
+        let number;
+        let counter = 0;
+        number = prompt("Чисто 0-100: ");
+        for (let i = 0; i <= 100; i++)
+        {
+            if(number % i == 0){
+                counter++;
+            }
+        }
+        if(counter == 2){
+                document.write("Число простое");
+        }
+        else{
+            document.write("Число сложное");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
